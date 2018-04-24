@@ -1,6 +1,6 @@
 /.vagrant
 /data/log/*
-!/data/log/log.conf
 /playbook/*.retry
 /data/bin/
 /data/lib/
+!/data/log/log.conf
