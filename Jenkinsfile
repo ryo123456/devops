@@ -1,5 +1,3 @@
-def bit_name= "devops"
-def bit_url= "git@bitbucket.org:ryo123/${bit_name}.git"
 def jenkins_path= "/var/lib/jenkins"
  
 node {
@@ -8,8 +6,8 @@ node {
         checkout scm
     }
 
-    stage('first job'){
-        sh "echo hello"
+    stage('terraform'){
+        sh "cd terraform & terraform apply"
     }
  
 }
